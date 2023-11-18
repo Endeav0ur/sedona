@@ -48,6 +48,8 @@ html {
   font-weight: 700;
   color: #000;
   text-decoration: none;
+  padding: 17px 20px;
+  display: block;
 }
 .main-navigation {
   display: flex;
@@ -59,16 +61,28 @@ margin-left: 30px;
 padding: 0;
 gap: 34px;
 display: flex;
+flex-wrap: wrap;
+list-style-type: none;
 }
 .user-navigation-list{
   margin: 0;
   padding: 0;
   margin-left: auto;
   display: flex;
+  list-style-type: none;
+}
+.user-navigation-item:not(:last-child) {
+  width: 42px;
+  height: 66px;
+}
+.user-navigation-link img{
+  margin-top: 24px;
 }
 .user-choice {
-  margin-right: 70px;
-  margin-left: 20px;
+  display: block;
+  margin: 14px 70px 19px 20px;
+  padding: 15px 9px;
+  text-align: center;
 }
 .button {
 font-size: 16px;
@@ -76,6 +90,8 @@ font-weight: 700;
 line-height: 20px;
 background-color: #756257;
 color: #FFF;
+border-radius: 4px;
+width: 160px;
 }
 /* Главная стр */
 .description-container {
@@ -90,12 +106,19 @@ color: #FFF;
   text-transform: uppercase;
   margin: 0 auto;
   }
+.description-container .section-title {
+  margin-top: 63px;
+}
 
 .section-description {
   font-size: 22px;
   line-height: 36px;
   color: #333;
   margin: 0 auto;
+}
+.description-container .section-description {
+  margin-top: 31px;
+  margin-bottom: 80px;
 }
 /* ПРЕИМУЩЕСТВА */
 .advantages-list{
@@ -408,5 +431,14 @@ margin-left: 290px;
     align-items: center;
   }
 
-
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
