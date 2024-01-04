@@ -146,8 +146,14 @@ background-color: #615048;
     color: #FFF;
     opacity: 0.3;
   }
-  .footer-social-link:hover svg {
+  .footer-social-link svg:hover {
+    stroke: #68A2CA;
     fill: #68A2CA;
+  }
+  .footer-social-link:focus{
+    border-radius: 10px;
+border: 3px solid var(--special-cold-light, #83B3D3);
+outline: none;
   }
   .footer-social-link:active svg {
     fill: #68A2CA;
@@ -396,13 +402,41 @@ list-style-type: none;
   width: 115px;
   margin-right: 72px;
 }
-.contacts-phone {
- margin: 0 auto;
- font-size: 40px;
-font-style: normal;
-font-weight: 400;
-line-height: 40px;
-text-transform: uppercase;
+.footer-logo svg:hover {
+  stroke: #756257;
+  fill: #756257;
+}
+.footer-logo:focus {
+border-radius: 10px;
+border: 3px solid var(--special-cold-light, #83B3D3);
+outline: none;
+}
+.footer-logo svg:active {
+  stroke: #756257;
+  fill: #756257;
+  opacity: 0.3;
+}
+a[href^="tel:"] {
+  margin: 0 auto;
+  font-size: 40px;
+ font-style: normal;
+ font-weight: 400;
+ line-height: 40px;
+ text-transform: uppercase;
+ color: #000;
+ text-decoration: none;
+}
+a[href^="tel:"]:hover {
+color: #756257;
+}
+a[href^="tel:"]:focus {
+border-radius: 10px;
+border: 3px solid var(--special-cold-light, #83B3D3);
+outline: none;
+}
+a[href^="tel:"]:active {
+  color: #756257;
+  opacity: 0.3;
 }
 /* CATALOG */
 h1.hotels {
@@ -469,9 +503,33 @@ text-transform: uppercase;
 margin-bottom: 20px;
 border-radius: 5px;
 }
+.button-apply:hover {
+  background-color: #68A2CA;
+}
+.button-apply:focus {
+  border-radius: 4px;
+border: 3px solid var(--basic-white, #FFF);
+background: var(--special-cold-dark, #68A2CA);
+outline: none;
+}
+.button-apply:active {
+  background-color: #68A2CA;
+  opacity: 0.3;
+}
 .button-reset {
   color: #FFF;
   background-color:rgba(28,28,28,0);
+}
+.button-reset:hover {
+  opacity: 0.6;
+}
+.button-reset:focus {
+  border-radius: 4px;
+border: 3px solid var(--special-cold-light, #83B3D3);
+outline: none;
+}
+.button-reset:active {
+  opacity: 0.3;
 }
 /* HOTELS */
 .sorting-type .select-control {
@@ -511,8 +569,22 @@ margin-bottom: 56px;
   justify-content: center;
   align-items: center;
 }
-.view-link-active{
-  border-color: #000000;
+.view-link-current {
+ border-radius: 4px;
+border: 2px solid var(--basic-black, #000);
+}
+.view-link:hover {
+  border-radius: 4px;
+border: 2px solid var(--special-cold-light, #83B3D3);
+}
+.view-link:focus {
+border-radius: 4px;
+border: 2px solid  #83B3D3;
+outline: none;
+}
+.view-link:active {
+border-radius: 4px;
+border: 2px solid var(--basic-gray, #E6E6E6);
 }
 /* КАРТОЧКИ */
 
@@ -528,6 +600,12 @@ margin-bottom: 56px;
 .hotel-card {
   grid-column: 2/5;
   grid-row: 2;
+}
+.hotel-card:hover {
+  opacity: 0.6;
+}
+.hotel-card:active {
+  opacity: 0.3;
 }
 .hotels-list {
   margin: 0 72px 34px 72px;
@@ -604,6 +682,32 @@ line-height: normal;
     text-transform: uppercase;
     grid-column: 2/3;
     grid-row: 5;
+  }
+  .button:hover {
+  background-color:  #615048;
+  }
+  .button:focus{
+border: 3px solid var(--special-cold-light, #83B3D3);
+background: var(--special-warm-dark, #615048);
+outline: none;
+  }
+  .button:active{
+    background-color: #615048;
+    fill-opacity: 0.3;
+  }
+  .likes:hover {
+border: 1px solid var(--special-warm-light, #756257);
+background: var(--special-cold-dark, #68A2CA);
+  }
+  .likes:focus {
+border: 3px solid var(--special-warm-light, #756257);
+background: var(--special-cold-dark, #68A2CA);
+outline: none;
+  }
+  .likes:active {
+border: 1px solid  #756257;
+background: #68A2CA;
+opacity: 0.3;
   }
   .hotel-card-title{
   color:  #000;
