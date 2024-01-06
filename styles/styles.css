@@ -131,21 +131,6 @@ background-color: #615048;
   background-color: #615048;
 
 }
-.search-button:hover {
-  background-color: #615048;
-  }
-  .search-button:active {
-    color: #FFFFFF4D;
-    background-color: #615048;
-  }
-  .newsletter-button:hover{
-    background-color:  #68A2CA;
-  }
-  .newsletter-button:active {
-    background-color: #68A2CA;
-    color: #FFF;
-    opacity: 0.3;
-  }
   .footer-social-link svg:hover {
     stroke: #68A2CA;
     fill: #68A2CA;
@@ -199,8 +184,32 @@ outline: none;
   justify-content: center;
   background-color: #83B3D31F;
 }
+.list-blue:first-child {
+  background-image: url(../images/—\ №1\ —.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.list-blue:nth-child(2) {
+  background-image: url(../images/—\ №2\ —.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.advantages-item:nth-child(3){
+  background-image: url(../images/—\ №3\ —.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 43%;
+}
 .advantages-item:nth-child(4) {
   background-color: #83B3D333;
+  background-image: url(../images/—\ №4\ —.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 43%;
+}
+.advantages-item:nth-child(5) {
+  background-color: #83B3D333;
+  background-image: url(../images/—\ №5\ —.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 43%;
 }
 .advantages-item:nth-child(n+3) {
   width: 400px;
@@ -308,8 +317,19 @@ margin-top: 56px;
 margin-left: 312px;
 margin-bottom: 93px;
 /* padding-top: 25px; */
-
 }
+.search-button:hover {
+  background-color: #615048;
+  }
+  .search-button:focus{
+border: 3px solid var(--special-cold-light, #83B3D3);
+background: var(--special-warm-dark, #615048);
+outline: none;
+  }
+  .search-button:active {
+    color: #FFFFFF4D;
+    background-color: #615048;
+  }
 /* ПОДПИСКА */
 .newsletter-form {
   display: flex;
@@ -354,20 +374,44 @@ margin-bottom: 46px;
 }
 input.field {
   width: 600px;
-  height: 60px;
+  height: 50px;
   background: #F2F2F2;
   border: 0;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-
 }
+input.field:hover{
+background: var(--basic-gray, #E6E6E6);
+}
+input.field:focus{
+border: 3px solid var(--special-cold-light, #83B3D3);
+background: var(--basic-gray, #E6E6E6);
+outline: none;
+}
+/* input.field:invalid{
+border: 2px solid var(--status-error, #FF5757);
+background: var(--basic-white, #FFF);
+} */
 .newsletter-button {
   margin: 0;
   width: 200px;
   height: 61,5px;
-  border: 0;
+  /* border: 0; */
   border-top-right-radius: 10px ;
   border-bottom-right-radius: 10px ;
+}
+.newsletter-button:hover{
+  background-color:  #68A2CA;
+}
+.newsletter-button:focus{
+  background-color: #68A2CA;
+  border: 3px solid#756257;
+  outline: none;
+}
+.newsletter-button:active {
+  background-color: #68A2CA;
+  color: #FFF;
+  opacity: 0.3;
 }
 /* ПОДВАЛ */
 .footer-container {
@@ -391,9 +435,15 @@ margin-left: 72px;
 list-style-type: none;
 }
 .footer-social-item{
-  padding: 0;
+padding: 0;
   margin: 0;
   margin-bottom: 8px;
+}
+.footer-social-link {
+  padding: 10px;
+  border: 3px;
+  width: 40px;
+  height: 40px;
 }
 .footer-social-item:nth-child(3n) {
   margin-right:0;
@@ -455,13 +505,15 @@ h1.hotels {
   list-style-type: none;
   margin-left: 73px;
   margin-bottom: 45px;
+  gap: 10px;
 }
 .breadcrumbs-item {
   font-size: 16px;
   font-weight: 400;
   }
+
 .breadcrumbs-link {
-  margin-right: 26px;
+  /* margin-right: 26px; */
   color: #FFF;
   text-decoration: none;
 }
@@ -537,6 +589,17 @@ outline: none;
   height: 48px;
   border-radius: 4px;
 border: 2px solid var(--basic-gray, #E6E6E6);
+}
+.select-control:hover{
+border: 2px solid var(--special-cold-light, #83B3D3);
+}
+.select-control:focus{
+  border: 2px solid var(--special-cold-light, #83B3D3);
+  outline: none;
+  }
+.select-control:active{
+border: 2px solid var(--basic-gray, #E6E6E6);
+color: #E6E6E6;
 }
 .find-hotels-container {
   display: flex;
@@ -762,6 +825,18 @@ border-radius: 4px;
 margin: 30px auto;
 padding: 0;
   }
+  .pagination-show-more:hover{
+    background-color: #68A2CA;
+  }
+  .pagination-show-more:focus{
+    background-color: #68A2CA;
+    border: 3px solid #756257;
+    outline: none;
+  }
+  .pagination-show-more:active{
+    background-color: #68A2CA;
+    opacity: 0.3;
+  }
 .top-line {
   border-top: 1px solid #E6E6E6;
   width: 1055px;
@@ -803,6 +878,22 @@ padding: 0;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
+  }
+  .pagination-link:hover{
+    background-color: #68A2CA;
+  }
+  .pagination-link:focus{
+border: 3px solid var(--special-warm-light, #756257);
+background: var(--special-cold-dark, #68A2CA);
+outline: none;
+  }
+  .pagination-link:active{
+    opacity: 0.3;
+    background-color: #68A2CA;
+  }
+  .pagination-current{
+    background-color: #f2f2f2;
+    color: #000;
   }
   .pagination-select {
     display: flex;
