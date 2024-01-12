@@ -24,7 +24,7 @@
             <a class="main-navigation-link" href="#">О Седоне</a>
           </li>
           <li class="main-navigation-item">
-            <a class="main-navigation-link current" href="catalog.html">Гостинницы</a>
+            <a class="main-navigation-link current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <ul class="user-navigation-list">
@@ -58,7 +58,7 @@
     <main class="main-container catalog-page">
       <section class="options">
         <h1 class="hotels">Гостиницы Седоны</h1>
-        <h2 class="visually-hidden">Фильтры поиска гостинницы</h2>
+        <h2 class="visually-hidden">Фильтры поиска гостиницы</h2>
 
         <ul class="breadcrumbs-list">
           <li class="breadcrumbs-item">
@@ -240,14 +240,22 @@
           <p class="hotels-amount">Найдено гостиниц: 38</p>
 
           <h3 class="visually-hidden" hidden>Сортировка и отображение</h3>
-          <form class="sorting-type">
+          <!-- <form class="sorting-type">
             <label class="visually-hidden" for="sorting">Сортировка</label>
             <select class="select-control" id="sorting" name="sorting">
               <option value="cheap">Сначала дешёвые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
-          </form>
+          </form> -->
+          <details class="select-control">
+            <summary>Сначала дешёвые</summary>
+            <div class="criteria">
+            <a href="#">Сначала дешёвые</a>
+            <a href="#">Сначала дорогие</a>
+            <a href="#">Сначала популярные</a>
+          </div>
+          </details>
           <ul class="view-container">
               <li class="view-item">
                 <a class="view-link view-link-current" href="#">
@@ -328,9 +336,10 @@
               <p class="hotel-price">От 4000 ₽</p>
               <button class="button" type="button">Подробнее</button>
               <button class="likes" type="button">В избранное</button>
-              <p class="star star-four">
+              <svg class="star star-four" width="18" height="17" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)">
+                <path d="m9 0 2.1 6.5H18l-5.6 4 2.2 6.5L9 13l-5.6 4 2.2-6.5-5.6-4h6.9L9 0Z" fill="#83B3D3"/>
+                </g><defs><clipPath id="a"><path fill="#fff" d="M0 0h18v17H0z"/></clipPath></defs></svg>
                 <span class="visually-hidden">4 звезды</span>
-              </p>
               <p class="card-rate">Рейтинг: 8,5</p>
             </li>
 
@@ -411,6 +420,9 @@
 
               <li class="pagination-item">
                 <a class="pagination-link" href="#">3</a>
+              </li>
+              <li class="pagination-item">
+                <a class="pagination-link" href="#">4</a>
               </li>
               <li class="pagination-item">
                 <a class="pagination-link" href="#">...</a>
