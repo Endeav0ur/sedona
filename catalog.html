@@ -92,9 +92,9 @@
           method="get"
         >
           <div class="search-block">
-            <fieldset class="options-filter-group">
-              <legend class="options-filter-title">Инфраструктура:</legend>
+              <fieldset class="options-filter-group">
               <ul class="infrastraction-list">
+                <legend class="options-filter-title">Инфраструктура:</legend>
                 <li class="infrastraction-item">
                   <label class="control">
                     <input
@@ -134,11 +134,11 @@
                   </label>
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="options-filter-group">
-              <legend class="options-filter-title">Тип жилья:</legend>
+              </fieldset>
+              <fieldset class="options-filter-group">
               <ul class="house-list">
-                <li class="house-item">
+                <legend class="options-filter-title">Тип жилья:</legend>
+                <li class="infrastraction-item">
                   <label class="control">
                     <input
                       class="visually-hidden control-input"
@@ -151,7 +151,7 @@
                     <span class="control-label">Гостиница</span>
                   </label>
                 </li>
-                <li class="house-item">
+                <li class="infrastraction-item">
                   <label class="control">
                     <input
                       class="visually-hidden control-input"
@@ -163,7 +163,7 @@
                     <span class="control-label">Мотель</span>
                   </label>
                 </li>
-                <li class="house-item">
+                <li class="infrastraction-item">
                   <label class="control">
                     <input
                       class="visually-hidden control-input"
@@ -176,16 +176,13 @@
                   </label>
                 </li>
               </ul>
-            </fieldset>
-
-            <fieldset class="options-filter-group">
-              <legend class="options-filter-title"> Стоимость</legend>
-
+              </fieldset>
+              <fieldset class="options-filter-group">
+              <legend class="options-filter-title"> Стоимость, ₽:</legend>
               <div class="range">
                 <label class="range-field">
-                  <span class="range-title">от</span>
                   <input
-                    class="range-input"
+                    class="range-input range-input-min"
                     type="number"
                     name="min-price"
                     value="0"
@@ -193,30 +190,28 @@
                     max="10000"
                     step="100"
                   />
-                  ₽
                 </label>
                 <label class="range-field">
-                  <span class="range-title">до</span>
                   <input
-                    class="range-input"
+                    class="range-input range-input-max"
                     type="number"
                     name="max-price"
                     value="9000"
                     min="0"
                     max="10000"
                     step="100"
+                    placeholder="до"
                   />
-                  <span class="range-money">₽</span>
                 </label>
 
-                <div class="range-slider slider">
-                  <div class="slider-bar">
-                    <button class="slider-range-toggle" type="button">
+                <div class="range-slider">
+                  <div class="range-bar" style="right:55px; width: 227px;">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden"
                         >Изменить минимальную цену.</span
                       >
                     </button>
-                    <button class="slider-range-toggle" type="button">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden"
                         >Изменить максимальную цену.</span
                       >
@@ -224,12 +219,12 @@
                   </div>
                 </div>
               </div>
-            </fieldset>
+              </fieldset>
             <div class="button-container">
               <button class="button-apply" type="apply">Применить</button>
               <button class="button-reset" type="reset">Сбросить</button>
             </div>
-          </div>
+          </divfields>
         </form>
       </section>
 
@@ -237,17 +232,9 @@
       <section class="find-hotels">
         <h2 class="visually-hidden">Результаты поиска</h2>
         <div class="find-hotels-container">
-          <p class="hotels-amount">Найдено гостиниц: 38</p>
+          <p class="hotels-amount">Найдено гостиниц:38</p>
 
           <h3 class="visually-hidden" hidden>Сортировка и отображение</h3>
-          <!-- <form class="sorting-type">
-            <label class="visually-hidden" for="sorting">Сортировка</label>
-            <select class="select-control" id="sorting" name="sorting">
-              <option value="cheap">Сначала дешёвые</option>
-              <option value="expensive">Сначала дорогие</option>
-              <option value="popular">Сначала популярные</option>
-            </select>
-          </form> -->
           <details class="select-control">
             <summary>Сначала дешёвые</summary>
             <div class="criteria">

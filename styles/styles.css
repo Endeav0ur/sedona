@@ -111,6 +111,7 @@ background-color: #756257;
 color: #FFF;
 border-radius: 4px;
 width: 160px;
+border: none;
 }
 .button.user-choice {
   box-sizing: border-box;
@@ -434,7 +435,6 @@ background: var(--basic-white, #FFF);
   margin: 0;
   width: 200px;
   height: 60px;
-  /* border: 0; */
   border-top-right-radius: 10px ;
   border-bottom-right-radius: 10px ;
   color: var(--basic-white, #FFF);
@@ -553,7 +553,7 @@ h1.hotels {
   padding: 0;
   list-style-type: none;
   margin-left: 73px;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
   gap: 10px;
 }
 .breadcrumbs-item {
@@ -571,25 +571,41 @@ h1.hotels {
   height: 408px;
   background-image: url("../images/catalog-background1.png");
 }
+.options-filter-group{
+  border: none;
+  padding: 0;
+  margin: 0;
+}
 .search-block {
 display: flex;
 width: 100%;
 height: auto;
 color: #FFF;
 background-repeat: no-repeat;
-justify-content: space-around;
+margin-left: 71px;
 }
 .infrastraction-list {
+  width: 150px;
   padding: 0;
   margin: 0;
+  margin-right: 67px;
+  list-style-type: none;
 }
 .house-list {
+  width: 150px;
   padding: 0;
   margin: 0;
+  margin-right: 162px;
+  list-style-type: none;
 }
+.infrastraction-item:not(:last-child){
+  margin-bottom: 13px;
+}
+
 .button-container {
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
 }
 .button-apply {
   width: 160px;
@@ -638,7 +654,6 @@ outline: none;
   height: 46px;
   border-radius: 4px;
   border: 2px solid var(--basic-gray, #E6E6E6);
-  margin-left: 170px;
 }
 .select-control:hover{
 border: 2px solid var(--special-cold-light, #83B3D3);
@@ -682,25 +697,27 @@ details[open]{
   display: flex;
   margin-left: 72px;
   margin-right: 72px;
-  justify-content: space-between;
   align-items: center;
  padding: 0;
 }
 .hotels-amount {
+  display: block;
+  width: 337px;
   color: var(--basic-black, #000);
   font-size: 30px;
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
-/* text-align: left; */
+  margin-right: 192px;
 margin-top: 50px;
 margin-bottom: 56px;
 }
 .view-container {
   display: flex;
-  flex-wrap: wrap;
   gap: 8px;
   list-style-type: none;
+  padding: 0;
+  margin-left: 80px;
 }
 
 .view-link {
@@ -711,6 +728,7 @@ margin-bottom: 56px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
 .view-link-current {
  border-radius: 4px;
@@ -1005,4 +1023,111 @@ border: 2px solid var(--basic-gray, #E6E6E6);
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+/* БЕГУНКИ */
+.range {
+  width: 287px;
+  margin-right:80px ;
+  display: flex;
+  flex-wrap: wrap;
+}
+.range-slider {
+  position: relative;
+  margin-top: 30px;
+  width: 287px;
+height: 4px;
+background-color: grey;
+/* opacity: 0.3; */
+}
 
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: white;
+}
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.range-toggle:hover{
+  background: var(--basic-white, #FFF);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.range-toggle:focus{
+border: 3px solid var(--special-cold-light, #83B3D3);
+background: var(--basic-white, #FFF);
+box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+.range-toggle:active{
+border: 2px solid var(--special-cold-light, #83B3D3);
+background: var(--basic-white, #FFF);
+box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.40);
+}
+.toggle-min{
+  position: absolute;
+  top: -10px;
+  left: -5px;
+}
+.toggle-max{
+  top: -10px;
+  right: -3px;
+}
+.options-filter-title {
+  margin-bottom: 34px;
+}
+.range-input {
+  margin: 0;
+  padding-left: 20px;
+  width: 120px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+border: 2px solid var(--basic-white, #FFF);
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.range-input-min {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+border-right: none;
+}
+.range-input-max {
+  border-top-right-radius:4px ;
+  border-bottom-right-radius: 4px;
+  margin-left: -5px;
+}
+/* ЧЕКБОКСЫ */
+.control {
+  position: relative;
+  display: block;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+background: var(--basic-white, #FFF);
+}
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  background-color: #242424;
+  border-radius: 50%;
+  content: "";
+}
