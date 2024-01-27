@@ -248,40 +248,57 @@
       </div>
     </footer>
     <div class="modal-container">
-      <div class="modal modal-search">
-        <button class="modal-close-button">
+      <div class="modal">
+       <div class="modal-content">
+        <div class="modal-head">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <button type="button" class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <section class="modal-content">
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        </div>
+            <section class="modal-search">
           <form class="rezervation-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="field-group">
-              <label class="visually-hidden" for="come in">Дата заезда</label>
-              <span class="modal-search">Дата заезда</span>
-              <input class="searching-form-field" type="date" id="come in" name="date" placeholder="27 april 2020">
-            </p>
-            <p class="field-group">
-              <label class="visually-hidden" for="come out">Дата выезда</label>
-              <span class="modal-search">Дата выезда</span>
-              <input class="searching-form-field" type="date" id="come out" name="date" placeholder="1 september 2024">
-            </p>
-            <div class="people">
-            <p class="field-group">
-              <label class="visually-hidden" for="age">Взрослые</label>
-              <span class="people-search">Взрослые</span>
+
+              <label class="visually-hidden modal-search-in" for="come in">Дата заезда</label>
+              <span class="modal-search">Дата заезда:</span>
+              <input class="searching-form-field-in" type="date" id="come in" name="date" placeholder="27 april 2020">
+
+              <label class="visually-hidden modal-search-out" for="come out">Дата выезда</label>
+              <span class="modal-search">Дата выезда:</span>
+              <input class="searching-form-field-out" type="date" id="come out" name="date" placeholder="1 september 2024">
+
+              <label class="visually-hidden adult" for="age">Взрослые</label>
+              <span class="people-search-adult">Взрослые:</span>
+
+              <div class="people-form-field-adult">
+              <button type="button" class="count minus">-</button>
               <input class="people-form-field" type="number" id="age" name="adult" placeholder="">
-            </p>
-            <p class="field-group">
-              <label class="visually-hidden" for="child">Дети</label>
-              <span class="people-search child">Дети</span>
+              <button type="button" class="count plus">+</button>
+              </div>
+
+              <label class="visually-hidden child" for="child">Дети</label>
+              <span class="people-search-child">Дети:</span>
+
+              <button class="button-popover">i</button>
+              <div class="popover popover-info">
+                <div class="triangle-top"></div>
+                <button class="popover-close-button">
+                  <span class="visually-hidden">Закрыть</span>
+                </button>
+                <span class="popover-content">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </span>
+              </div>
+
+              <div class="people-form-field-child">
+                <button type="button" class="count minus">-</button>
               <input class="people-form-field" type="number" id="child" name="child" placeholder="">
-            </p>
-            </div>
+              <button type="button" class="count plus">+</button>
+              </div>
             <button class="modal-button" type="button">Найти</button>
           </form>
         </section>
       </div>
-
+      </div>
     </div>
   </body>
 </html>
