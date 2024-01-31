@@ -1313,6 +1313,9 @@ text-transform: uppercase;
   border: none;
   margin-top: 10px;
 }
+.modal-container-close {
+  display: none;
+}
 /* ПОПОВЕР */
 .button-popover{
   width: 25px;
