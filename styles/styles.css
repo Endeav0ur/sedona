@@ -197,7 +197,9 @@ background-color: #615048;
   margin-top: 31px;
   margin-bottom: 80px;
 }
+
 /* ПРЕИМУЩЕСТВА */
+
 .advantages-list{
   display: flex;
   flex-wrap: wrap;
@@ -361,7 +363,6 @@ border-radius: 10px;
 margin-top: 56px;
 margin-left: 312px;
 margin-bottom: 93px;
-/* padding-top: 25px; */
 }
 .search-button:hover {
   background-color: #615048;
@@ -375,7 +376,9 @@ outline: none;
     color: #FFFFFF4D;
     background-color: #615048;
   }
+
 /* ПОДПИСКА */
+
 .newsletter-form {
   display: flex;
   justify-content: center;
@@ -446,7 +449,7 @@ font-family: PT Sans;
 font-size: 20px;
 font-style: normal;
 font-weight: 700;
-line-height: 26px; /* 130% */
+line-height: 26px;
 text-transform: uppercase;
 border: none;
 }
@@ -464,6 +467,7 @@ border: none;
   opacity: 0.3;
 }
 /* ПОДВАЛ */
+
 .footer-container {
   width: 1200px;
   height: 120px;
@@ -671,7 +675,6 @@ background: var(--basic-white, #FFF);
   display: flex;
   flex-wrap: wrap;
 }
-
 .range-input {
   box-sizing: border-box;
   width: 144px;
@@ -698,7 +701,6 @@ border-right: none;
   border-bottom-right-radius: 4px;
   margin-left: -5px;
 }
-
 .range-slider {
   position: relative;
   margin-top: 30px;
@@ -744,6 +746,7 @@ box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.40);
   top: -10px;
   right: -3px;
 }
+/* КНОПКИ      */
 
 .button-container {
   display: flex;
@@ -1199,6 +1202,7 @@ border: 2px solid var(--basic-gray, #E6E6E6);
   }
 
    /* МОДАЛЬНОЕ ОКНО  */
+
    .modal-container {
     position: fixed;
     display: flex;
