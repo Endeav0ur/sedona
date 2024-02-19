@@ -119,143 +119,141 @@
         </ul>
 
         <form
-          class="options-filter"
+          class="options-filter search-block"
           action="https://echo.htmlacademy.ru/"
           method="get"
         >
-          <div class="search-block">
-            <fieldset class="options-filter-group">
-              <ul class="infrastraction-list">
-                <h3 class="options-filter-title">Инфраструктура:</h3>
-                <li class="infrastraction-item">
-                  <label class="control">
-                    <input
-                      class="visually-hidden control-input"
-                      type="checkbox"
-                      name="comfort"
-                      value="pool"
-                      checked="checked"
-                    />
-                    <span class="control-mark"></span>
-                    <span class="control-label">Бассейн</span>
-                  </label>
-                </li>
-                <li class="infrastraction-item">
-                  <label class="control">
-                    <input
-                      class="visually-hidden control-input"
-                      type="checkbox"
-                      name="comfort"
-                      value="parking"
-                      checked="checked"
-                    />
-                    <span class="control-mark"></span>
-                    <span class="control-label">Парковка</span>
-                  </label>
-                </li>
-                <li class="infrastraction-item">
-                  <label class="control">
-                    <input
-                      class="visually-hidden control-input"
-                      type="checkbox"
-                      name="comfort"
-                      value="wi-fi"
-                    />
-                    <span class="control-mark"></span>
-                    <span class="control-label">Wi-Fi</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="options-filter-group">
-              <ul class="house-list">
-                <h3 class="options-filter-title">Тип жилья:</h3>
-                <li class="infrastraction-item">
-                  <label class="control">
-                    <input
-                      class="visually-hidden control-input"
-                      type="radio"
-                      name="house"
-                      value="hotel"
-                      checked="checked"
-                    />
-                    <span class="control-mark"></span>
-                    <span class="control-label">Гостиница</span>
-                  </label>
-                </li>
-                <li class="infrastraction-item">
-                  <label class="control">
-                    <input
-                      class="visually-hidden control-input"
-                      type="radio"
-                      name="house"
-                      value="motel"
-                    />
-                    <span class="control-mark"></span>
-                    <span class="control-label">Мотель</span>
-                  </label>
-                </li>
-                <li class="infrastraction-item">
-                  <label class="control">
-                    <input
-                      class="visually-hidden control-input"
-                      type="radio"
-                      name="house"
-                      value="apartament"
-                    />
-                    <span class="control-mark"></span>
-                    <span class="control-label">Апартаменты</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="options-filter-group">
-              <h3 class="options-filter-title">Стоимость, ₽:</h3>
-              <div class="range">
-                <label class="range-field">
+          <fieldset class="options-filter-group">
+            <h3 class="options-filter-title">Инфраструктура:</h3>
+            <ul class="infrastraction-list">
+              <li class="infrastraction-item">
+                <label class="control">
                   <input
-                    class="range-input range-input-min"
-                    type="number"
-                    name="min-price"
-                    value="0"
-                    min="0"
-                    max="10000"
-                    step="100"
+                    class="visually-hidden control-input"
+                    type="checkbox"
+                    name="comfort"
+                    value="pool"
+                    checked="checked"
                   />
+                  <span class="control-mark"></span>
+                  <span class="control-label">Бассейн</span>
                 </label>
-                <label class="range-field">
+              </li>
+              <li class="infrastraction-item">
+                <label class="control">
                   <input
-                    class="range-input range-input-max"
-                    type="number"
-                    name="max-price"
-                    value="9000"
-                    min="0"
-                    max="10000"
-                    step="100"
-                    placeholder="до"
+                    class="visually-hidden control-input"
+                    type="checkbox"
+                    name="comfort"
+                    value="parking"
+                    checked="checked"
                   />
+                  <span class="control-mark"></span>
+                  <span class="control-label">Парковка</span>
                 </label>
-              </div>
-
-              <div class="range-slider">
-                <div class="range-bar" style="right: 55px; width: 227px">
-                  <button class="range-toggle toggle-min" type="button">
-                    <span class="visually-hidden"
-                      >Изменить минимальную цену.</span
-                    >
-                  </button>
-                  <button class="range-toggle toggle-max" type="button">
-                    <span class="visually-hidden"
-                      >Изменить максимальную цену.</span
-                    >
-                  </button>
-                </div>
-              </div>
-            </fieldset>
-            <div class="button-container">
-              <button class="button-apply" type="button">Применить</button>
-              <button class="button-reset" type="reset">Сбросить</button>
+              </li>
+              <li class="infrastraction-item">
+                <label class="control">
+                  <input
+                    class="visually-hidden control-input"
+                    type="checkbox"
+                    name="comfort"
+                    value="wi-fi"
+                  />
+                  <span class="control-mark"></span>
+                  <span class="control-label">Wi-Fi</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="options-filter-group">
+            <h3 class="options-filter-title">Тип жилья:</h3>
+            <ul class="house-list">
+              <li class="infrastraction-item">
+                <label class="control">
+                  <input
+                    class="visually-hidden control-input"
+                    type="radio"
+                    name="house"
+                    value="hotel"
+                    checked="checked"
+                  />
+                  <span class="control-mark"></span>
+                  <span class="control-label">Гостиница</span>
+                </label>
+              </li>
+              <li class="infrastraction-item">
+                <label class="control">
+                  <input
+                    class="visually-hidden control-input"
+                    type="radio"
+                    name="house"
+                    value="motel"
+                  />
+                  <span class="control-mark"></span>
+                  <span class="control-label">Мотель</span>
+                </label>
+              </li>
+              <li class="infrastraction-item">
+                <label class="control">
+                  <input
+                    class="visually-hidden control-input"
+                    type="radio"
+                    name="house"
+                    value="apartament"
+                  />
+                  <span class="control-mark"></span>
+                  <span class="control-label">Апартаменты</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="options-filter-group">
+            <h3 class="options-filter-title">Стоимость, ₽:</h3>
+            <div class="range">
+              <label class="range-field">
+                <input
+                  class="range-input range-input-min"
+                  type="number"
+                  name="min-price"
+                  value="0"
+                  min="0"
+                  max="10000"
+                  step="100"
+                />
+              </label>
+              <label class="range-field">
+                <input
+                  class="range-input range-input-max"
+                  type="number"
+                  name="max-price"
+                  value="9000"
+                  min="0"
+                  max="10000"
+                  step="100"
+                  placeholder="до"
+                />
+              </label>
             </div>
+
+            <div class="range-slider">
+              <div class="range-bar" style="right: 55px; width: 227px">
+                <button class="range-toggle toggle-min" type="button">
+                  <span class="visually-hidden"
+                    >Изменить минимальную цену.</span
+                  >
+                </button>
+                <button class="range-toggle toggle-max" type="button">
+                  <span class="visually-hidden"
+                    >Изменить максимальную цену.</span
+                  >
+                </button>
+              </div>
+            </div>
+          </fieldset>
+          <div class="button-container">
+            <button class="button-apply" type="submit">Применить</button>
+            <button class="button-reset" type="reset">Сбросить</button>
           </div>
         </form>
       </section>
@@ -363,7 +361,7 @@
           <li class="hotel-item">
             <img
               class="hotel-card"
-              src="images/catalog/hotel-1.jpg"
+              src="images/catalog/hotel-amara.jpg"
               alt="фото отеля Amara"
               width="300"
               height="206"
@@ -382,7 +380,7 @@
           <li class="hotel-item">
             <img
               class="hotel-card"
-              src="images/catalog/hotel-2.jpg"
+              src="images/catalog/hotel-inn.jpg"
               alt="фото отеля Desert"
               width="300"
               height="206"
@@ -401,7 +399,7 @@
           <li class="hotel-item">
             <img
               class="hotel-card"
-              src="images/catalog/hotel-3.jpg"
+              src="images/catalog/hotel-diablo.jpg"
               alt="фото отеля Villas"
               width="300"
               height="206"
@@ -420,7 +418,7 @@
           <li class="hotel-item">
             <img
               class="hotel-card"
-              src="images/catalog/hotel-4.jpg"
+              src="images/catalog/hotel-green.jpg"
               alt="фото отеля Inn"
               width="300"
               height="206"
@@ -436,12 +434,11 @@
             <p class="card-rate">Рейтинг: 9,2</p>
           </li>
         </ul>
-
-        <div class="top-line"></div>
-        <button class="pagination-show-more" type="button">
-          Загрузить ещё
-        </button>
-        <div class="bottom-line"></div>
+        <div class="pagination-line">
+          <button class="pagination-show-more" type="button">
+            Загрузить ещё
+          </button>
+        </div>
         <!-- ПАГИНАЦИЯ -->
         <h3 class="visually-hidden" hidden>Список страниц</h3>
         <div class="main-pagination-container">

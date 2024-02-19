@@ -106,7 +106,6 @@
                 Настоящий <br />
                 городок
               </h3>
-              <!-- <p class="number">-№1-</p> -->
               <p class="advantages-description-blue">
                 Седона — не аттракцион для туристов, там течёт <br />
                 своя жизнь
@@ -114,7 +113,7 @@
             </div>
             <img
               class="advantages"
-              src="images/photo-1.jpg"
+              src="images/photo-house.jpg"
               alt="Дома Седоны"
               width="800"
               height="384"
@@ -123,7 +122,7 @@
               <li class="advantages-sublist-item">
                 <img
                   class="img-advantages-sublist"
-                  src="images/icon-1.svg"
+                  src="images/icon-house.svg"
                   width="75"
                   height="72"
                   alt="Дом"
@@ -138,7 +137,7 @@
               <li class="advantages-sublist-item">
                 <img
                   class="img-advantages-sublist"
-                  src="images/icon-2.svg"
+                  src="images/icon-burger.svg"
                   alt="Бургер"
                 />
                 <h4 class="advantages-title-sublist">Еда</h4>
@@ -151,7 +150,7 @@
               <li class="advantages-sublist-item">
                 <img
                   class="img-advantages-sublist"
-                  src="images/icon-3.svg"
+                  src="images/icon-gift.svg"
                   width="64"
                   height="76"
                   alt="Подарок"
@@ -167,7 +166,7 @@
           <li class="advantages-item">
             <img
               class="advantages"
-              src="images/photo-2.jpg"
+              src="images/photo-canyon.jpg"
               width="800"
               height="384"
               alt="Мост дьявола"
@@ -381,78 +380,71 @@
               <span class="visually-hidden">Закрыть</span>
             </button>
           </div>
-          <section class="modal-search">
-            <form
-              class="rezervation-form"
-              action="https://echo.htmlacademy.ru/"
-              method="post"
+     
+          <form
+            class="rezervation-form"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
+          >
+            <label class="searching modal-search-in" for="come-in"
+              >Дата заезда</label
             >
-              <label class="visually-hidden modal-search-in" for="come-in"
-                >Дата заезда</label
-              >
-              <span class="modal-search">Дата заезда:</span>
+            <input
+              class="searching-form-field-in"
+              type="date"
+              id="come-in"
+              name="date"
+            />
+
+            <label class="searching modal-search-out" for="come-out"
+              >Дата выезда</label
+            >
+            <input
+              class="searching-form-field-out"
+              type="date"
+              id="come-out"
+              name="date"
+            />
+            <label class="searching" for="age">Взрослые</label>
+
+            <div class="people-form-field-adult">
+              <button type="button" class="count minus">-</button>
               <input
-                class="searching-form-field-in"
-                type="date"
-                id="come-in"
-                name="date"
+                class="people-form-field"
+                type="number"
+                id="age"
+                name="adult"
+                placeholder=""
               />
+              <button type="button" class="count plus">+</button>
+            </div>
+            <label class="searching" for="child">Дети</label>
+            <button class="button-popover">i</button>
+            <div class="popover popover-info">
+              <div class="triangle-top"></div>
+              <button class="popover-close-button">
+                <span class="visually-hidden">Закрыть</span>
+              </button>
+              <span class="popover-content"
+                >Укажите количество детей, которые будут с вами, возраст которых
+                от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+              </span>
+            </div>
 
-              <label class="visually-hidden modal-search-out" for="come-out"
-                >Дата выезда</label
-              >
-              <span class="modal-search">Дата выезда:</span>
+            <div class="people-form-field-child">
+              <button type="button" class="count minus">-</button>
               <input
-                class="searching-form-field-out"
-                type="date"
-                id="come-out"
-                name="date"
+                class="people-form-field"
+                type="number"
+                id="child"
+                name="child"
+                placeholder=""
               />
+              <button type="button" class="count plus">+</button>
+            </div>
+            <button class="modal-button" type="submit">Найти</button>
+          </form>
 
-              <label class="visually-hidden adult" for="age">Взрослые</label>
-              <span class="people-search-adult">Взрослые:</span>
-
-              <div class="people-form-field-adult">
-                <button type="button" class="count minus">-</button>
-                <input
-                  class="people-form-field"
-                  type="number"
-                  id="age"
-                  name="adult"
-                  placeholder=""
-                />
-                <button type="button" class="count plus">+</button>
-              </div>
-
-              <label class="visually-hidden child" for="child">Дети</label>
-              <span class="people-search-child">Дети:</span>
-
-              <button class="button-popover">i</button>
-              <div class="popover popover-info">
-                <div class="triangle-top"></div>
-                <button class="popover-close-button">
-                  <span class="visually-hidden">Закрыть</span>
-                </button>
-                <span class="popover-content"
-                  >Укажите количество детей, которые будут с вами, возраст
-                  которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                </span>
-              </div>
-
-              <div class="people-form-field-child">
-                <button type="button" class="count minus">-</button>
-                <input
-                  class="people-form-field"
-                  type="number"
-                  id="child"
-                  name="child"
-                  placeholder=""
-                />
-                <button type="button" class="count plus">+</button>
-              </div>
-              <button class="modal-button" type="button">Найти</button>
-            </form>
-          </section>
         </div>
       </div>
     </div>

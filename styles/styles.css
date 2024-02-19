@@ -2,14 +2,14 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("/fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("/fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -121,7 +121,7 @@ list-style-type: none;
   height: 20px;
   border-radius: 50%;
   background: #7DB54F;
-  background-image: url(../images/12.svg);
+  background-image: url(../images/likes.svg);
   background-repeat: no-repeat;
   background-position: center;
   top: 0;
@@ -213,29 +213,29 @@ background-color: #615048;
   background-color: #83B3D31F;
 }
 .list-blue:first-child {
-  background-image: url(../images/—\ №1\ —.svg);
+  background-image: url(../images/number1.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .list-blue:nth-child(2) {
-  background-image: url(../images/—\ №2\ —.svg);
+  background-image: url(../images/number2.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
 .advantages-item:nth-child(3){
-  background-image: url(../images/—\ №3\ —.svg);
+  background-image: url(../images/number3.svg);
   background-repeat: no-repeat;
   background-position: 50% 49%;
 }
 .advantages-item:nth-child(4) {
   background-color: #83B3D333;
-  background-image: url(../images/—\ №4\ —.svg);
+  background-image: url(../images/number4.svg);
   background-repeat: no-repeat;
   background-position: 50% 49%;
 }
 .advantages-item:nth-child(5) {
   background-color: #83B3D333;
-  background-image: url(../images/—\ №5\ —.svg);
+  background-image: url(../images/number5.svg);
   background-repeat: no-repeat;
   background-position: 50% 49%;
 }
@@ -659,7 +659,7 @@ background: var(--basic-white, #FFF);
 }
 .control-input[type="checkbox"]:checked + .control-mark::before {
   position: absolute;
-  background-image: url(../images/catalog/tick\ 1.svg);
+  background-image: url(../images/catalog/tick.svg);
   width: 12px;
   height: 10px;
   background-repeat: no-repeat;
@@ -820,7 +820,7 @@ summary {
 }
 summary::before{
   position: absolute;
-  content: url(../images/variant=arrow.svg);
+  content: url(../images/variants.svg);
   transform: translate(225px);
 }
 details[open]{
@@ -1104,10 +1104,16 @@ font-weight: 700;
 text-transform: uppercase;
 width: 620px;
 height: 60px;
-border: 0;
 border-radius: 4px;
 margin: 25px auto 30px auto;
 padding: 0;
+border:0;
+  }
+  .pagination-line {
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6 ;
+    width: 1055px;
+    margin: auto;
   }
   .pagination-show-more:hover{
     background-color: #68A2CA;
@@ -1121,16 +1127,6 @@ padding: 0;
     background-color: #68A2CA;
     opacity: 0.3;
   }
-.top-line {
-  border-top: 1px solid #E6E6E6;
-  width: 1055px;
-  margin: auto;
-}
-.bottom-line {
-  border-bottom: 1px solid #E6E6E6;
-  width: 1055px;
-  margin: auto;
-}
   .pagination {
     margin: 0;
     padding: 0;
@@ -1249,7 +1245,7 @@ padding: 0;
 fill: var(--basic-light, #F2F2F2);
 border-radius: 50%;
 border: none;
-background-image: url(../images/modal-close\ 1.svg);
+background-image: url(../images/modal-close.svg);
 background-repeat: no-repeat;
 background-position: center;
 cursor: pointer;
@@ -1318,7 +1314,7 @@ input.people-form-field {
   border: none;
   padding: 0;
 }
-span{
+.searching {
   box-sizing: border-box;
   font-weight: bold ;
   padding-top: 10px;
