@@ -93,13 +93,6 @@
             height="352"
           />
         </div>
-          <!-- <img
-            class="greetings"
-            src="images/wellcome.png"
-            alt="Горный пейзаж"
-            width="1200"
-            height="485"
-          /> -->
           <div class="description-container">
           <p class="section-title">
             Седона — небольшой городок в Аризоне, <br />заслуживающий большего!
@@ -407,7 +400,6 @@
               id="come-in"
               name="date"
             />
-
             <label class="searching modal-search-out" for="come-out"
               >Дата выезда</label
             >
@@ -420,7 +412,11 @@
             <label class="searching" for="age">Взрослые</label>
 
             <div class="people-form-field-adult">
-              <button type="button" class="count minus">-</button>
+              <button type="button" class="count count-minus">
+                <img class="less" src="images/minus-modal.svg"
+                width="13"
+                height="1">
+              </button>
               <input
                 class="people-form-field"
                 type="number"
@@ -428,10 +424,19 @@
                 name="adult"
                 placeholder=""
               />
-              <button type="button" class="count plus">+</button>
+              <button type="button" class="count count-plus">
+                <img class="more" src="images/plus-modal.svg"
+                width="13"
+                height="13">
+              </button>
             </div>
             <label class="searching" for="child">Дети</label>
-            <button class="button-popover">i</button>
+            <button class="button-popover">
+              <img class="info" src="images/info.svg"
+              width="1"
+              height="9">
+
+            </button>
             <div class="popover popover-info">
               <div class="triangle-top"></div>
               <button class="popover-close-button">
@@ -444,7 +449,11 @@
             </div>
 
             <div class="people-form-field-child">
-              <button type="button" class="count minus">-</button>
+              <button type="button" class="count count-minus">
+                <img class="less" src="images/minus-modal.svg"
+                width="13"
+                height="1">
+              </button>
               <input
                 class="people-form-field"
                 type="number"
@@ -452,7 +461,11 @@
                 name="child"
                 placeholder=""
               />
-              <button type="button" class="count plus">+</button>
+              <button type="button" class="count count-plus">
+                <img class="more" src="images/plus-modal.svg"
+                width="13"
+                height="13">
+              </button>
             </div>
             <button class="modal-button" type="submit">Найти</button>
           </form>
